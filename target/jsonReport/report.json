@@ -1,0 +1,655 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-23T07:12:04.342Z",
+        "line": 4,
+        "name": "Add Items Into the Cart",
+        "description": "",
+        "id": "testing-cart-add-and-remove;add-items-into-the-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4170227400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User login",
+            "match": {
+              "location": "stepDefinition.CartSteps.userisLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 209086600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user adds an item to the cart",
+            "match": {
+              "location": "stepDefinition.CartSteps.userAddtoCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 358719900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The cart should contain the added item",
+            "match": {
+              "location": "stepDefinition.CartSteps.cartShouldCountainAddedItem()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-23T07:12:09.150Z",
+        "line": 9,
+        "name": "Remove Items Into the Cart",
+        "description": "",
+        "id": "testing-cart-add-and-remove;remove-items-into-the-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2224078200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User login",
+            "match": {
+              "location": "stepDefinition.CartSteps.userisLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 137106200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user adds an item to the cart",
+            "match": {
+              "location": "stepDefinition.CartSteps.userAddtoCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103359000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The user removes an item from the cart",
+            "match": {
+              "location": "stepDefinition.CartSteps.userRemovefromCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 219991900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The product should be remove from the cart",
+            "match": {
+              "location": "stepDefinition.CartSteps.productShouldbeRemoved()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-23T07:12:11.839Z",
+        "line": 15,
+        "name": "User Checkout on Empty Cart",
+        "description": "",
+        "id": "testing-cart-add-and-remove;user-checkout-on-empty-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2228625900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User login",
+            "match": {
+              "location": "stepDefinition.CartSteps.userisLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 100239500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user navigates to the cart page",
+            "match": {
+              "location": "stepDefinition.CartSteps.userNavigateToCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72305000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The user click checkout button",
+            "match": {
+              "location": "stepDefinition.CartSteps.userClickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 177063200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The error message should appear",
+            "match": {
+              "location": "stepDefinition.CartSteps.errorMessageShouldAppear()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Testing Cart Add and Remove",
+    "description": "",
+    "id": "testing-cart-add-and-remove",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/cart.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-23T07:12:14.423Z",
+        "line": 4,
+        "name": "Fill the information correctly",
+        "description": "",
+        "id": "testing-customer-information-after-clicking-checkout;fill-the-information-correctly",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2509388700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User login with valid credentials",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userLoginWithValidCredentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 161190100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User add product to cart",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userAddProductToCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53952700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to the cart page",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userNavigatesToCartPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55533900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks checkout",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userClicksCheckout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 255621400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User fills the first name, last name and zip code correctly",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userFillsInfoCorrectly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86945200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks continue",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userClicksContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67233500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks finish",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userClicksFinish()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43839300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The order is successfully placed",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.orderSuccessfullyPlaced()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-23T07:12:17.665Z",
+        "line": 15,
+        "name": "Empty the information",
+        "description": "",
+        "id": "testing-customer-information-after-clicking-checkout;empty-the-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2209593100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User login with valid credentials",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userLoginWithValidCredentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 142342800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User add product to cart",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userAddProductToCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54773500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User navigates to the cart page",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userNavigatesToCartPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64154200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User clicks checkout",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userClicksCheckout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62433200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User clicks continue",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.userClicksContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44398100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The error message should be appear",
+            "match": {
+              "location": "stepDefinition.CustomerInformation.errorMessageAppear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Testing customer information after clicking checkout",
+    "description": "",
+    "id": "testing-customer-information-after-clicking-checkout",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/customerinformation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-23T07:12:20.250Z",
+        "line": 4,
+        "name": "Successful login",
+        "description": "",
+        "id": "user-login;successful-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1862367100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the saucedemo login page",
+            "match": {
+              "location": "stepDefinition.LoginSteps.navigateToSaucedemoLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 241750900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters valid username and password",
+            "match": {
+              "location": "stepDefinition.LoginSteps.enterValidCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116225200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks the login button",
+            "match": {
+              "location": "stepDefinition.LoginSteps.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 188990100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user should be logged in",
+            "match": {
+              "location": "stepDefinition.LoginSteps.verifyLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-23T07:12:22.665Z",
+        "line": 10,
+        "name": "Unsuccessful login",
+        "description": "",
+        "id": "user-login;unsuccessful-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1729170700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user is on the saucedemo login page",
+            "match": {
+              "location": "stepDefinition.LoginSteps.navigateToSaucedemoLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 207809900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user enters invalid username and password",
+            "match": {
+              "location": "stepDefinition.LoginSteps.enterInvalidCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77404000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clicks the login button",
+            "match": {
+              "location": "stepDefinition.LoginSteps.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212094700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user should see an error message",
+            "match": {
+              "location": "stepDefinition.LoginSteps.verifyUnsuccessfulLogin()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User Login",
+    "description": "",
+    "id": "user-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-23T07:12:24.898Z",
+        "line": 4,
+        "name": "User can logout account",
+        "description": "",
+        "id": "logout-account;user-can-logout-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2224640100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is login",
+            "match": {
+              "location": "stepDefinition.LogoutSteps.userisLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 452309100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user clicks on the logout option",
+            "match": {
+              "location": "stepDefinition.LogoutSteps.userClicksLogout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 220644300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user should be logged out",
+            "match": {
+              "location": "stepDefinition.LogoutSteps.userLoggedOut()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-23T07:12:27.803Z",
+        "line": 10,
+        "name": "User can not open the inventory page after logout",
+        "description": "",
+        "id": "logout-account;user-can-not-open-the-inventory-page-after-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2224198000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user is login",
+            "match": {
+              "location": "stepDefinition.LogoutSteps.userisLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 393615700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The user clicks on the logout option",
+            "match": {
+              "location": "stepDefinition.LogoutSteps.userClicksLogout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 774391600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user go to the inventory page",
+            "match": {
+              "location": "stepDefinition.LogoutSteps.openInventoryPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233151100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The user should get the error message",
+            "match": {
+              "location": "stepDefinition.LogoutSteps.userShouldGetErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Logout account",
+    "description": "",
+    "id": "logout-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/logout.feature",
+    "tags": []
+  }
+]
